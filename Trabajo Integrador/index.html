@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@500&family=Secular+One&display=swap" rel="stylesheet">
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="formularios.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark justify-content-center">
+            <a class="navbar-brand" id="Titulo" href="#">Lightweight</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!--Banner-->
+        <section class="text-center imagenCentral">
+            <div class="container inCentral">
+                <h1 class="display-1">Inscribite</h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <p class="descripcion">Lightweight vuelve a abrir sus puertas y te invita a que seas parte del mejor gimnasio del país.</p>
+                        <div class="btn btn-warning boton-membre"><a  id="conseguir-membresia" href="#Membresia">Conseguir membresía</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Formulario de contacto y acerca-->
+        <section class="inscripcion pt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 trainers text-center align-items-center">
+                        <h2 class="pt-5">Continuando nuestro legado</h2>
+                        <p class="pt-5">Luego de tres largos y difíciles años, Lightweight finalmente vuelve a estar abierto al público. Con una administración renovada, a cargo de Facundo Mosquera, se buscará seguir con las
+                            ideas y principios originales que hicieron a este gimnasio legendario. <br>
+                        </p>
+                        <br>
+                        <p>No solo expandimos y mejoramos la infraestructura del lugar, también contamos con nuevas máquinas y ampliamos nuestro cuerpo profesional con entrenadores expertos que estarán 
+                            siempre atentos a cualquier consulta que necesites.</p>
+                    </div>
+                    <div class="col-sm-6 text-center seccion-formulario">
+                        <h2 class="pt-5">¿Tenés alguna duda?</h2> <br>
+                        <p>
+                            Si querés saber si tenemos un equipamiento específico en nuestro gimnasio, nuestros horarios, 
+                            las diferentes rutinas que ofrecemos si buscas un entrenamiento guiado o cualquier otra duda que tengas, por favor no dudes en
+                            contactarnos con el formulario debajo
+                        </p> <br>
+                        <form id="formularioContacto" class="needs-validation" novalidate="novalidate">
+                            <div class="form-row mb-3">
+                                <input type="text" placeholder="Nombre" id="nombre" required >
+                            </div>
+                            <div class="form-row mb-3">
+                                <input type="email" placeholder="Email" id="email" required>
+                            </div>
+                            <div class="form-row mb-3">
+                                <textarea name="mensaje" id="mensaje" placeholder="Su mensaje" required></textarea>
+                            </div>
+                            <div class="form-row mb-5">
+                                <button type="submit" class="btn btn-warning">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Formulario de cotización-->
+
+        <section>
+            <div class="container">
+                <div class="row text-center mt-5">
+                    <div>
+                        <h2 id="Membresia">Comprá acá tu membresía</h2>
+                        <p>El precio de la membresía es de $4700 por mes</p>
+                        <form id="formularioDeProceso" class="needs-validation" method="post" novalidate="novalidate">
+                            <div class="form-row mb-3">
+                                <input type="text" id="nombreProceso" placeholder="Nombre">
+                            
+                            <div class="form-row mb-3">
+                                <input type="text" id="apellidoProceso" placeholder="Apellido">
+                            
+                            <div class="form-row mb-3">
+                                <input type="number" id="meses" placeholder="Meses de inscripción">
+                            
+                            <div class="form-row mb-3"> 
+                                <input type="email" id="mailProceso" placeholder="Email">
+                            
+                            <div class="form-row mb-5">
+                                <button type="submit" class="btn btn-warning">Realizar pago</button>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

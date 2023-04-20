@@ -1,0 +1,55 @@
+body{
+    background-color: #16191c ;
+}
+
+header{
+    background-color: #121517;
+}
+
+#Titulo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.imagenCentral {
+    background-image: url(img/gym.jpg);
+    background-size: cover;
+    padding-top: 20vh;
+    padding-bottom: 25vh;
+}
+
+.trainers {
+    background-color: #C29306;
+    opacity: 0.8;
+    
+}
+
+h1, h2 {
+    font-family: 'Secular One', sans-serif;
+
+}
+
+main {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: black
+}
+
+#conseguir-membresia {
+    color: black;
+    text-decoration: none;
+}
+
+.descripcion{
+    font-size: 1.3rem;
+}
+
+.seccion-formulario{
+    background-color: #0A0C0D;
+    color: whitesmoke;
+}
+
+form.error{
+    color: #ff0000;
+}
